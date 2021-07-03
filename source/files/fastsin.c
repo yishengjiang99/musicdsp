@@ -22,8 +22,7 @@ int main() {
   UINT32 step = (UINT32)(frequency / sampleRate * mod);
 
   UINT32 phase = 0;
-  // UINT32 step = ((float)(frequency / sampleRate)) * ((float)(1L << 32) -
-  // .0001);
+
   printf("%u %u\n", phase, step);
   phase = phase + step;
   printf("%u %u\n", phase, step);
